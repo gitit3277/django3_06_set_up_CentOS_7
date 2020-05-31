@@ -1,0 +1,33 @@
+sudo yum update
+sudo yum install wget
+sudo yum -y groupinstall "Development Tools"
+sudo yum -y install openssl-devel bzip2-devel libffi-devel 
+cd ~/Downloads/ 
+wget https://www.sqlite.org/2020/sqlite-autoconf-3320100.tar.gz 
+sudo tar zxvf ~/Downloads/sqlite-autoconf-3290000.tar.gz
+cd ~/Downloads/sqlite-autoconf-3290000/ 
+sudo ./configure 
+sudo mv /usr/bin/sqlite3 /usr/bin/sqlite3.bak
+sudo make 
+sudo make install 
+sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> ~/.bashrc 
+sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> ~/.bash_profile 
+source ~/.bashrc 
+source ~/.bash_profile 
+cd ~/Downloads 	
+sudo yum -y install wget
+wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz   
+tar -zxvf Python-3.8.0.tgz 
+cd Python-3.8.3/
+sudo ./configure 
+sudo make 
+sudo make install  
+mkdir ~/Website 
+cd ~/Website 
+python3 -m venv ./env_django0/      
+source /env_django0/bin/activate 
+pip 3 install django 
+django-admin startproject src_here    
+cd src_here 
+python3 manage.py runserver
+
