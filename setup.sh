@@ -3,7 +3,6 @@
 echo "-->Updating CentOS 7 System"
 yum -y update 
 
-
 echo "-->Installing wget" 
 yum -y install wget 
 
@@ -23,7 +22,6 @@ if [ -f /usr/bin/sqlite3 ]; then
 	echo "Archiving old version of sqlite3"
 	mv /usr/bin/sqlite3 /usr/bin/sqlite3.bak
 fi
-
 
 make
 make install  
