@@ -29,6 +29,9 @@ make install
 sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> ~/.bashrc 
 sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> ~/.bash_profile 
 
+source /home/user1/.bashrc
+source /home/user1/.bash_profile
+
 echo "Installing Python 3.8.0"
 cd ..
 wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
