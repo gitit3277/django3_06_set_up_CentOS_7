@@ -26,8 +26,8 @@ fi
 make
 make install  
 
-sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> /home/user1/.bashrc 
-sudo echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> /home/user1/.bash_profile 
+echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> /home/user1/.bashrc 
+echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> /home/user1/.bash_profile 
 
 source /home/user1/.bashrc
 source /home/user1/.bash_profile
