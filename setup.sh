@@ -31,6 +31,7 @@ echo "export LD_LIBRARY_PATH="/usr/local/lib" ">> /home/user1/.bash_profile
 
 export LD_LIBRARY_PATH="/usr/local/lib"
 env  LD_LIBRARY_PATH="/usr/local/lib"
+set LD_LIBRARY_PATH="/usr/local/lib"
 LD_LIBRARY_PATH="/usr/local/lib"
 
 source /home/user1/.bashrc
