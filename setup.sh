@@ -33,7 +33,7 @@ export LD_LIBRARY_PATH="/usr/local/lib"
 env  LD_LIBRARY_PATH="/usr/local/lib"
 set LD_LIBRARY_PATH="/usr/local/lib"
 LD_LIBRARY_PATH="/usr/local/lib"
-setenv LD_LIBRARY_PATH="/usr/local/lib"
+
 
 source /home/user1/.bashrc
 source /home/user1/.bash_profile
@@ -47,4 +47,7 @@ cd Python-3.8.3/
 make 
 make install 
 
+#reboot required 
+read -p "Reboot is required"
+init 6
 
