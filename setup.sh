@@ -8,6 +8,8 @@ echo "-->Installing wget"
 yum -y install wget 
 
 echo "Installing development tools  "
+
+yum -y groupinstall "Development Tools"
 yum -y install openssl-devel bzip2-devel libffi-devel
 
 echo "Downloading sqlite3"
