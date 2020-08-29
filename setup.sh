@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "run this script with sudo"
+echo "run this script as root"
 read -p "any key " 
 echo "-->Updating CentOS 7 System"
 yum -y update 
