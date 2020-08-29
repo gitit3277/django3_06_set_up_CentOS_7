@@ -46,9 +46,9 @@ cd ..
 wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
 tar zxvf Python-3.8.3.tgz
 cd Python-3.8.3/
-./configure 
-make 
-make install 
+ 
+sudo LD_RUN_PATH=/usr/local/lib ./configure --enable-optimizations
+sudo LD_RUN_PATH=/usr/local/lib make altinstall
 
 #reboot required 
 read -p "Reboot is required"
