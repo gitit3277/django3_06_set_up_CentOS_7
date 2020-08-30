@@ -48,7 +48,7 @@ tar zxvf Python-3.8.3.tgz
 cd Python-3.8.3/
  
 sudo LD_RUN_PATH=/usr/local/lib ./configure --enable-optimizations
-sudo LD_RUN_PATH=/usr/local/lib make altinstall
+sudo LD_RUN_PATH=/usr/local/lib make install
 
 #reboot required 
 read -p "Reboot is required"
